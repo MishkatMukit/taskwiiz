@@ -42,7 +42,6 @@ const displayAll = (date, task) => {
     document.getElementById('input-date').value = "";
 
     const th2 = document.createElement('td');
-    th2.style.widt = "30%";
     tr.appendChild(th2);
     th2.innerText = task;
     document.getElementById('input-task').value = "";
