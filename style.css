@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+
+}
+.header-text h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+.header-text h4{
+    font-weight: 500;
+    font-size: 25px
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img{
+    width: 150px;
+}
