@@ -21,7 +21,58 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 70px 100px;
+    background-color: rgba(133, 255, 228, 0.4) ;
+    border-radius: 16px;
 }
 header img{
     width: 150px;
+}
+
+#input-date, #input-task{
+    border: 3px solid rgb(0, 255, 183) ;
+    padding: 10px 8px;
+    border-radius: 8px;
+    
+}
+
+#task-add-button{
+    background: none;
+    border: 3px solid rgb(0, 255, 183) ;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+#task-add-button:hover{
+    background: green;
+    color: white;
+    border: 3px solid green ;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+.task-add-section{
+    /* border: 1px solid black; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.task-table-section{
+    
+    display: flex ;
+    justify-content: center;
+}
+.task-table th{
+    padding: 10px 0px;
+    padding-right: 80px;
+    margin: 10px;
+    font-weight: 600;
+}
+#clear-all-button{
+    margin-top: 10px;
+    border: none;
+    background:red ;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+
 }

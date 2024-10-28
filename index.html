@@ -22,16 +22,40 @@
         </div>
         <div class="header-text">
             <h1>TaskWiiz</h1>
-            <h4>Your daily task handler</h4>
+            <h4>Your daily task handler.</h4>
         </div>
     </header>
     <main>
+        <!-- task add section starts -->
+         <section class="task-add-section">
+            <div class="task-add">
+                <input type="date" id="input-date" placeholder="Date">
+                <input type="text" id="input-task" placeholder="Task">
+                <button id="task-add-button">Add Task</button>
+                
+            </div>
+         </section>
+         <section class="task-table-section">
+            <table class="task-table">
+                <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Task</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                <tbody id="content-container">
+                    <!-- contents from user -->
+                </tbody>
+            </table>
+            <div>
+                <button id="clear-all-button">Clear All</button>
+            </div>
+         </section>
 
     </main>
-    <footer>
 
-    </footer>
-
+    <script src="./taskwiiz.js"></script>
 </body>
 
 </html>
