@@ -41,6 +41,7 @@ header img{
     border: 3px solid rgb(0, 255, 183) ;
     padding: 10px 12px;
     border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 #task-add-button:hover{
     background: green;
@@ -66,12 +67,48 @@ header img{
     margin: 10px;
     font-weight: 600;
 }
+.task-col{
+    max-width: 50px;
+}
+
 #clear-all-button{
     margin-top: 10px;
-    border: none;
-    background:red ;
-    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#clear-all-button:hover{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
     color: white;
-    font-weight: 600;
+    background-color: #e60000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.remove-button {
+    background-color: ;
+    color: black; /* White text color */
+}
+button.remove-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+    color: #fff; /* Ensures the text remains white */
 }

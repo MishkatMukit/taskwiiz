@@ -36,20 +36,21 @@ const displayAll = (date, task) => {
     const tr = document.createElement('tr');
     contentContainer.appendChild(tr);
 
-    const th1 = document.createElement('th');
+    const th1 = document.createElement('td');
     tr.appendChild(th1);
     th1.innerText = date;
     document.getElementById('input-date').value = "";
 
-    const th2 = document.createElement('th');
+    const th2 = document.createElement('td');
+    th2.style.widt = "30%";
     tr.appendChild(th2);
     th2.innerText = task;
     document.getElementById('input-task').value = "";
 
-    const th3 = document.createElement('th');
+    const th3 = document.createElement('td');
     tr.appendChild(th3);
     const removeButton = document.createElement('button');
-    
+    removeButton.className = "remove-button";
     removeButton.innerText = "Remove";
     removeButton.addEventListener('click', function () {
         tr.remove(); // Remove the task from the table
