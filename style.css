@@ -6,7 +6,7 @@
     
 }
 body{
-    background-color: #c0d6df;
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -276,7 +276,7 @@ button.remove-button:hover {
     flex-direction: column;
     justify-content: flex-start;
     top: 1;
-    border-radius: 0px 8px;
+    border-radius: 0px;
     left: -250px; /* Hidden off-screen */
     width: 250px;
     height: 100%;
@@ -302,7 +302,7 @@ button.remove-button:hover {
 
 /* Add some transition to page content */
 .page-content {
-    margin-top: 70px; /* Add margin equal to the header's height */
+    margin-top: 68px; /* Add margin equal to the header's height */
     transition: margin-left 0.3s;
     padding: 16px;
 }
