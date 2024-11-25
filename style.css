@@ -61,9 +61,10 @@ header img{
     gap: 25px;
 }
 button{
-    color: #023e8a;
+    color:#023e8a;
 }
 .left-side{
+    background-color: #0077b6;
     
     height:100% ;
     /* border: 1px solid blue; */
@@ -118,6 +119,7 @@ width: 60%;
     display: flex;
     justify-content: center;
     padding: 1rem;
+    padding-top: 4rem;
 }
 
 .task-add {
@@ -277,13 +279,13 @@ button.remove-button:hover {
     justify-content: flex-start;
     top: 1;
     border-radius: 0px;
-    left: -250px; /* Hidden off-screen */
+    left: -260px; /* Hidden off-screen */
     width: 250px;
     height: 100%;
     background-color:#0077b6;
     color: white;
     transition: left 0.3s ease; /* Smooth slide-in */
-    padding-top: 60px;
+    padding-top: 100px;
     padding-right: 20px;
     margin-right: 10px;
     z-index: 1000;
@@ -302,7 +304,7 @@ button.remove-button:hover {
 
 /* Add some transition to page content */
 .page-content {
-    margin-top: 68px; /* Add margin equal to the header's height */
+    margin-top: 4vh; /* Add margin equal to the header's height */
     transition: margin-left 0.3s;
-    padding: 16px;
+    padding-top: 30px;
 }
