@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +8,82 @@
     <script src="https://kit.fontawesome.com/481fde1f12.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <a href=""><i id="threebar" class="fa-solid fa-bars"></i></a>
-        <img src="./images/taskwiiz.png" alt="">
 
-    </header>
-    <main>
+<body>
+    <div class="header">
+        <span>
+            <!-- <a href=""><i id="threebar" class="fa-solid fa-bars"></i></a> -->
+        </span>
         <div class="title">
-            <div>
-                <img src="./images/taskwiiz.png" alt="">
-            </div>
             <div class="title-text">
                 <h1>TaskWiiz</h1>
                 <h4>Your daily task handler.</h4>
             </div>
         </div>
-        <div class="container">
-            <div class="left-side">
-                <button class="primary-button"><i class="fa-solid fa-house"></i><span>Home</span></button>
-                <button class="primary-button"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
-                <button class="primary-button"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
-                <button class="primary-button"><i class="fa-solid fa-address-card"></i><span>About</span></button>
-            </div>
-            <div class="right-side">
-                <section class="task-add-section">
-                    <div class="task-add">
-                        <input type="date" id="input-date" placeholder="Date">
-                        <input type="text" id="input-task" placeholder="Task">
-                        <button id="task-add-button">Add Task</button>
-                        
-                    </div>
-                 </section>
-                 <section class="task-table-section">
-                    <table class="task-table">
-                        <thead>
-                            <tr>
-                              <th>Date</th>
-                              <th>Task</th>
-                              <th>Action</th>
-                            </tr>
-                          </thead>
-                        <tbody id="content-container">
-                            <!-- contents from user -->
-                        </tbody>
-                    </table>
-                    <div>
-                        <button id="clear-all-button">Clear All</button>
-                    </div>
-                 </section>
+    </div>
+    <main>
+        <div class="page-content">
+            <div class="container">
+                <div class="right-side">
+                    <section class="task-add-section">
+                        <div class="task-add">
+                            <input type="date" id="input-date" placeholder="Date">
+                            <input type="text" id="input-task" placeholder="Task">
+                            <button id="task-add-button">Add Task</button>
+                        </div>
+                    </section>
+                    <section class="task-table-section">
+                        <table class="task-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Task</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="content-container">
+                                <!-- contents from user -->
+                            </tbody>
+                        </table>
+                        <div>
+                            <button id="clear-all-button">Clear All</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="left-side">
+                    <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar"
+                            class="fa-solid fa-bars"></i></a>
+                    <nav class="drawer" id="drawer">
+                        <!-- <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar" class="fa-solid fa-bars"></i></a> -->
+                        <button class="primary-button"><i class="fa-solid fa-house"></i><span>Home</span></button>
+                        <button class="primary-button"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
+                        <button class="primary-button"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
+                        <button class="primary-button"><i
+                                class="fa-solid fa-address-card"></i><span>About</span></button>
+                    </nav>
+                </div>
             </div>
         </div>
-
     </main>
-    <script src="./taskwiiz.js"></script>
+    <script>
+        // Function to toggle the drawer visibility
+        function toggleDrawer() {
+            var drawer = document.getElementById("drawer");
+            drawer.classList.toggle("open");
+
+            // Adjust the page content based on the drawer state
+            var pageContent = document.querySelector(".page-content");
+            if (drawer.classList.contains("open")) {
+                pageContent.style.marginLeft = "250px";
+                threeBar.classList.add("hidden");
+
+            } else {
+                pageContent.style.marginLeft = "0";
+                threeBar.classList.remove("hidden");
+            }
+        }
+    </script>
+    <script src="taskwiiz.js"></script>
 </body>
+
 </html>
