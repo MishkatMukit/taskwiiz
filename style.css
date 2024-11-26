@@ -290,6 +290,9 @@ button.remove-button:hover {
     margin-right: 10px;
     z-index: 1000;
 }
+.drawer button{
+    font-weight: 600;
+}
 .drawer button:hover {
     background-color: #a9d6e5;
 }
