@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskwiiz Home</title>
+    <link rel="shortcut icon" href="./images/icon1.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/481fde1f12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+
+<body>
+    <nav>
+        <span>
+            <!-- <a href=""><i id="threebar" class="fa-solid fa-bars"></i></a> -->
+        </span>
+        <div class="title">
+            <div class="title-text">
+                <h1>TaskWiiz</h1>
+                <h4>Stay organized</h4>
+            </div>
+            <div>
+                <img src="./images/icon1.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="right-side">
+                <div class="hero-section">
+                  <h1><span class="blue">Organize</span> your life with ease!</h1>
+                  <p>TaskWiiz helps you manage your tasks, notes, and more.</p>
+                </div>
+                <div class="benefits-section">
+                  <h2>Why TaskWiiz?</h2>
+                  <ul>
+                    <li><i class="fa-solid fa-check-circle"></i> Increase productivity</li>
+                    <li><i class="fa-solid fa-calendar-check"></i> Stay on top of deadlines</li>
+                    <li><i class="fa-solid fa-lightbulb"></i> Capture ideas on the go</li>
+                  </ul>
+                </div>
+              </div>
+            
+                    <div class="left-side">
+                        <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar"
+                                class="fa-solid fa-bars"></i></a>
+                        <div class="drawer" id="drawer">
+                            <!-- <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar" class="fa-solid fa-bars"></i></a> -->
+                            <button class="primary-button"><i class="fa-solid fa-house"></i><span>Home</span></button>
+                            <button class="primary-button"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
+                            <button class="primary-button" onclick="goToTask()"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
+                            <button class="primary-button"><i
+                                    class="fa-solid fa-address-card"></i><span>About</span></button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Function to toggle the drawer visibility
+        function toggleDrawer() {
+            var drawer = document.getElementById("drawer");
+            drawer.classList.toggle("open");
+
+            // Adjust the page content based on the drawer state
+            var pageContent = document.querySelector(".page-content");
+            if (drawer.classList.contains("open")) {
+                pageContent.style.marginLeft = "250px";
+                threeBar.classList.add("hidden");
+
+            } else {
+                pageContent.style.marginLeft = "0";
+                threeBar.classList.remove("hidden");
+            }
+        }
+    </script>
+    <script src="taskwiiz.js"></script>
+</body>
+
+</html>

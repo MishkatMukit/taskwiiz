@@ -4,28 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taskwiiz Home</title>
-    <link rel="shortcut icon" href="./images/taskwiiz.png" type="image/x-icon">
+    <title>Taskwiiz-Task</title>
+    <link rel="shortcut icon" href="./images/icon1.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/481fde1f12.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
+    <nav>
         <span>
             <!-- <a href=""><i id="threebar" class="fa-solid fa-bars"></i></a> -->
         </span>
         <div class="title">
             <div class="title-text">
                 <h1>TaskWiiz</h1>
-                <h4>Your daily task handler.</h4>
+                <h4>Stay organized</h4>
             </div>
-            <!-- <div>
-                <img src="./images/taskwiiz.png" alt="">
-            </div> -->
+            <div>
+                <img src="./images/icon1.png" alt="">
+            </div>
         </div>
-    </div>
+    </nav>
     <main>
+        
         <div class="page-content">
             <div class="container">
                 <div class="right-side">
@@ -57,14 +58,14 @@
                 <div class="left-side">
                     <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar"
                             class="fa-solid fa-bars"></i></a>
-                    <nav class="drawer" id="drawer">
+                    <div class="drawer" id="drawer">
                         <!-- <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar" class="fa-solid fa-bars"></i></a> -->
-                        <button class="primary-button"><i class="fa-solid fa-house"></i><span>Home</span></button>
+                        <button class="primary-button" onclick="goToHome()"><i class="fa-solid fa-house"></i><span>Home</span></button>
                         <button class="primary-button"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
                         <button class="primary-button"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
                         <button class="primary-button"><i
                                 class="fa-solid fa-address-card"></i><span>About</span></button>
-                    </nav>
+                        </div>
                 </div>
             </div>
         </div>
