@@ -67,7 +67,7 @@ window.onload = () => {
     }
 };
 function goToHome() {
-    window.location.href = "home.html"; // Replace with the correct path if necessary
+    window.location.href = "index.html"; // Replace with the correct path if necessary
 }
 function goToTask() {
         window.location.href = "task.html"; // Replace with the correct path if necessary
