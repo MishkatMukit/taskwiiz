@@ -61,10 +61,9 @@
                     <div class="drawer" id="drawer">
                         <!-- <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar" class="fa-solid fa-bars"></i></a> -->
                         <button class="primary-button" onclick="goToHome()"><i class="fa-solid fa-house"></i><span>Home</span></button>
-                        <button class="primary-button"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
+                        <button class="primary-button" onclick="goToNotes()"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
                         <button class="primary-button"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
-                        <button class="primary-button"><i
-                                class="fa-solid fa-address-card"></i><span>About</span></button>
+                        <button class="primary-button" onclick="goToAbout()"><i class="fa-solid fa-address-card"></i><span>About</span></button>
                         </div>
                 </div>
             </div>
@@ -88,6 +87,7 @@
             }
         }
     </script>
+    
     <script src="taskwiiz.js"></script>
 </body>
 

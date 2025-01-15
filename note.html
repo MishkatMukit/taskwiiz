@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./images/icon1.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/481fde1f12.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="note.css">
 </head>
 
 <body>
@@ -31,38 +31,27 @@
         <div class="page-content">
             <div class="container">
                 <div class="right-side">
-                    <div class="hero-section">
-                      <h1><span class="blue">Organize</span> your life with ease!</h1>
-                      <p>TaskWiiz helps you manage your tasks, notes, and more.</p>
-                    </div>
-                    <div class="benefits-section">
-                      <h2>Why TaskWiiz?</h2>
-                      <ul>
-                        <li><i class="fa-solid fa-check-circle"></i> Increase productivity</li>
-                        <li><i class="fa-solid fa-calendar-check"></i> Stay on top of deadlines</li>
-                        <li><i class="fa-solid fa-lightbulb"></i> Capture ideas on the go</li>
-                      </ul>
-                    </div>
-                    <div class="navigate">
-                        <div class="card">
-                            <button class="navigate-button" id="task-navigate" onclick="goToTask()">Tasks</button>
-                            <p id="task-count">0</p>
-                        </div>
-                        <div class="card">
-                            <button class="navigate-button" id="note-navigate" onclick="goToNotes()">Notes</button>
-                            <p id="note-count">0</p>
-                        </div>
-                    </div>
-     
+                        <section class="note-container">
+                            <div class="note-add">
+                                <textarea id="input-note" placeholder="Write your note here..."></textarea>
+                                <button id="note-add-button">Add Note</button>
+                            </div>
+                            <div class="note-card">
+                                <div id="note-container" class="note-container">
+                                    <!-- Notes will be displayed here as cards -->
+                                </div>
+                            </div>
+                        </section>
+                        
                 </div>
                 <div class="left-side">
                     <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar"
                             class="fa-solid fa-bars"></i></a>
                     <div class="drawer" id="drawer">
                         <!-- <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar" class="fa-solid fa-bars"></i></a> -->
-                        <button class="primary-button" ><i class="fa-solid fa-house"></i><span>Home</span></button>
+                        <button class="primary-button" onclick="goToHome()"><i class="fa-solid fa-house"></i><span>Home</span></button>
                         <button class="primary-button" onclick="goToNotes()"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
-                        <button class="primary-button" onclick="goToTask()"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
+                        <button class="primary-button"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
                         <button class="primary-button" onclick="goToAbout()"><i class="fa-solid fa-address-card"></i><span>About</span></button>
                         </div>
                 </div>
@@ -87,6 +76,7 @@
             }
         }
     </script>
+    
     <script src="taskwiiz.js"></script>
 </body>
 

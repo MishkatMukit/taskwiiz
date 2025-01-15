@@ -1,0 +1,18 @@
+.note-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9vh;
+}
+textarea {
+    width: 150%;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+.note-add{
+    
+}

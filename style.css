@@ -270,6 +270,7 @@ button.remove-button:hover {
     }
 }
 .drawer {
+    overflow: hidden;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -300,7 +301,9 @@ button.remove-button:hover {
 .drawer.open {
     left: 0;
 }
-
+#threebar.hidden {
+    display: none;
+}
 /* Hamburger menu */
 
 
