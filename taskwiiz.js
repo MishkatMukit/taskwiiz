@@ -79,7 +79,6 @@ window.onload = () => {
     }
     updateStats();
 };
-
 function goToHome() {
     window.location.href = "home.html"; // Replace with the correct path if necessary
 }
@@ -92,12 +91,3 @@ function goToNotes() {
 function goToAbout() {
         window.location.href = "about.html"; // Replace with the correct path if necessary
     }
-
-    const sidebar = document.getElementById('left-side');
-const toggleButton = document.getElementById('toggle-sidebar'); // Replace with your toggle button's ID
-
-toggleButton.addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed'); // Toggle the sidebar state
-    const isCollapsed = sidebar.classList.contains('collapsed');
-    localStorage.setItem('sidebarState', isCollapsed ? 'collapsed' : 'expanded');
-});

@@ -73,13 +73,14 @@ header img{
 }
 
 .card p {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
     color: white;
 }
 .navigate-button{
-    border: 1px solid #023e8a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color:#023e8a ;
     background-color: white;
     border-radius: 5px;
+    padding: 5px 15px;
 }

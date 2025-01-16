@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taskwiiz-Task</title>
+    <title>Taskwiiz-Notes</title>
     <link rel="shortcut icon" href="./images/icon1.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/481fde1f12.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -34,13 +34,18 @@
                         <section class="note-container">
                             <div class="note-add">
                                 <textarea id="input-note" placeholder="Write your note here..."></textarea>
-                                <button id="note-add-button">Add Note</button>
+                                
+                                <div class="button-flex">
+                                    <button id="note-add-button">Add Note</button>
+                                    <button id="clear-all-notes-button">Clear All</button>
+                                </div>  
                             </div>
-                            <div class="note-card">
-                                <div id="note-container" class="note-container">
-                                    <!-- Notes will be displayed here as cards -->
+                                <div class="note-card">
+                                    <div id="note-show" class="note-show">
+                                        <!-- Notes will be displayed here  -->
+                                    </div>
                                 </div>
-                            </div>
+                            
                         </section>
                         
                 </div>
@@ -50,8 +55,8 @@
                     <div class="drawer" id="drawer">
                         <!-- <a href="javascript:void(0)" onclick="toggleDrawer()"><i id="threebar" class="fa-solid fa-bars"></i></a> -->
                         <button class="primary-button" onclick="goToHome()"><i class="fa-solid fa-house"></i><span>Home</span></button>
-                        <button class="primary-button" onclick="goToNotes()"><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
-                        <button class="primary-button"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
+                        <button class="primary-button" ><i class="fa-solid fa-clipboard"></i><span>Notes</span></button>
+                        <button class="primary-button" onclick="goToTask()"><i class="fa-solid fa-list-check"></i><span>Tasks</span></button>
                         <button class="primary-button" onclick="goToAbout()"><i class="fa-solid fa-address-card"></i><span>About</span></button>
                         </div>
                 </div>
@@ -76,7 +81,7 @@
             }
         }
     </script>
-    
+    <script src="note.js"></script>
     <script src="taskwiiz.js"></script>
 </body>
 
